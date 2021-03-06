@@ -13,7 +13,8 @@ const Chat = ({ location }) => {
     socket = io("http://localhost:5000");
     setName(name);
     setRoom(room);
-    console.log(socket);
+    // console.log(socket);
+    socket.emit("join", { name, room });
   }, []);
 
   return <h1>Chat</h1>;
