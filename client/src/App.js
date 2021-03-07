@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./dataview/Home";
 import Chat from "./dataview/Chat";
+import "./app.css";
 
 const App = () => {
   return (
